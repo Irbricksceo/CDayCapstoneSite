@@ -20,10 +20,101 @@
 			</div>
 		</nav>
 		<div class="content">
-            <p>Coming Soon</p>
-		</div>
-	</body>
-</html>
+            <!-- Slideshow container -->
+            
+            <div class="slideshow-container">
 
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 8</div>
+                <img src="img1.jpg" style="width:100%">
+                <br>
+                <div class="text">Safe Kid Homepage</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 8</div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="text">Simon Minigame</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="text">Unscramble Minigame</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="img4.jpg" style="width:100%">
+                    <div class="text">Fill In Minigame</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="img5.jpg" style="width:100%">
+                    <div class="text">Mail Out! Minigame</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="img6.jpg" style="width:100%">
+                    <div class="text">Taxi! Minigame</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="img7.jpg" style="width:100%">
+                    <div class="text">Alphabet Soup Minigame</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="img8.jpg" style="width:100%">
+                    <div class="text">Building Blocks Minigame</div>
+                </div>
     
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+           </script>       
+	</body>
 </html>

@@ -1,13 +1,12 @@
 body {
-
-}
+    background-color: #d3e0ea;
+  }
 
 .navtop {
-	background-color: #2f3947;
+	background-color: #276678;
 	height: 60px;
 	width: 100%;
     border: 0;
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 }
 .navtop div {
 	display: flex;
@@ -23,7 +22,7 @@ body {
 .navtop div img {
 	padding: 0;
 	margin: 5px;
-	background-color: #eaebed;
+	background-color: #f6f5f5;
 
 }
 .navtop div h1 {
@@ -31,7 +30,7 @@ body {
 	font-size: 24px;
 	padding: 0;
 	margin: 0;
-	color: #eaebed;
+	color: #f6f5f5;
 	font-weight: normal;
 }
 
@@ -40,49 +39,47 @@ body {
     padding: 0;
     padding-top: 24px;
 	margin: 0 10px 0;
-	color: #eaebed;
+	color: #f6f5f5;
 	font-weight: normal;
 }
 
 .navtop div a {
-	padding: 0 20px;
+	padding: 0 40px;
 	text-decoration: none;
-	color: #c1c4c8;
+	color: #f6f5f5;
 	font-weight: bold;
 }
 .navtop div a i {
 	padding: 2px 8px 0 0;
 }
 .navtop div a:hover {
-	color: #eaebed;
+	color: #ff8303;
 }
 
 .content {
     padding-top: 60px;
     margin: 0 auto;
+    text-align: center;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #276678;
 }
-.content h2 {
-	margin: 0;
-	padding: 25px 0;
-	font-size: 22px;
-	border-bottom: 1px solid #e0e0e3;
-	color: #4a536e;
+
+.content p {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
 }
-.content > p, .content > div {
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-	margin: 25px 0;
-	padding: 25px;
-	background-color: #fff;
+
+.content a:hover {
+	color: #ff8303;
 }
-.content > p table td, .content > div table td {
-	padding: 5px;
-}
-.content > p table td:first-child, .content > div table td:first-child {
-	font-weight: bold;
-	color: #4a536e;
-	padding-right: 15px;
-}
-.content > div p {
-	padding: 5px;
-	margin: 0 0 10px 0;
+
+hr {
+    background-color: #d3e0ea;
+    border-color:#276678;
+    border-style: dotted none none;
+    border-width: 5px;
+    height: 0px;
+    width: 10%;
 }
